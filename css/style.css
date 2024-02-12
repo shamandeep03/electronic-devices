@@ -414,5 +414,5 @@
     overflow: hidden;
 }
 .position-relative.h-100 img:hover{
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }

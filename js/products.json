@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "name":"DS-2CE72DF3T-LSE", 
+        "img":"",
+        "heading":"2MP Smart Hybrid Light ColorVu Fixed Turret Camera",
+        "details":"High quality imaging with 2 MP, 1920 × 1080 resolution\n24/7 color imaging with F1.0 aperture Smart-Hybrid light, optimize your security with flexible lighting options\nClear imaging against strong back light due to 130 dB true WDR technology\n3D DNR technology delivers clean and sharp images\n2.8 mm, 3.6 mm fixed focal lens \nUp to 40 m white light distance for bright night imaging\nUp to 40 m IR distance for bright night imaging High quality audio with audio over coaxial cable, built-in mic\nWater and dust resistant (IP67)"
+    },
+    {
+        "id":2,
+        "name":"DS-2CE12KFOT-FS",
+        "img":"",
+        "heading":"3K ColorVu Audio Fixed Bullet Camera",
+        "details":"High quality imaging with 3K, 2960 × 1665 resolution/n24/7 color imaging with F1.0 aperture/n2.8 mm, 3.6 mm, 6 mm fixed focal lens/nUp to 40 m white light distance for bright night imaging/nOne port for four switchable signals (TVI/AHD/CVI/CVBS)/nWater and dust resistant (IP67)/nHigh quality audio with audio over coaxial cable, built-in mic/n"
+    },
+    {
+        "id":3,
+        "name":"DS-2CE50DF3T-VPLSE",
+        "img":"",
+        "heading":"2MP Smart Hybrid Light ColorVu Fixed Dome Camera",
+        "details":"High quality imaging with 2 MP, 1920 × 1080 resolution\n24/7 color imaging with F1.0 aperture\nSmart-Hybrid light, optimize your security with flexible lighting options\nClear imaging against strong back light due to 130 dB true WDR technology\n3D DNR technology delivers clean and sharp images\n2.8 mm, 3.6 mm fixed focal lens\nUp to 40 m white light distance for bright night imaging\nUp to 40 m IR distance for bright night imaging\nHigh quality audio with audio over coaxial cable, built-in mic\n Water and dust resistant (IP67) and vandal resistant (IK10)"
+    },
+    {
+        "id":4,
+        "name":"IDS-7104HQHI-M1/S",
+        "img":"",
+        "heading":"4-ch 1080P Mini 1U H.265 AcuSense DVR",
+        "details":"Deep learning based human and vehicle targets classification of Motion Detection 2.0\nDeep learning-based perimeter protection\nH.265 Pro+/H.265 Pro/H.265 video compression\nHDTVI/AHD/CVI/CVBS/IP video inputs\nAudio via coaxial cable\nUp to 6-ch IP camera inputs (up to 6 MP)\nEncoding ability up to 3K/5M Lite @ 12 fps"
+    },
+    {
+        "id":5,
+        "name":"IDS-7104HQHI-M1/S",
+        "img":"",
+        "heading":"16-ch 1080P Mini 1U H.265 AcuSense DVR",
+        "details":"Deep learning based human and vehicle targets classification of Motion Detection 2.0\nDeep learning-based perimeter protection\nH.265 Pro+/H.265 Pro/H.265 video compression\nHDTVI/AHD/CVI/CVBS/IP video inputs\nAudio via coaxial cable\nUp to 6-ch IP camera inputs (up to 6 MP)\nEncoding ability up to 3K/5M Lite @ 12 fps"
+    },
+    {
+        "id":6,
+        "name":"DS-7204HGHI-K1",
+        "img":"",
+        "heading":"4-ch 1080p Lite 1U H.265 DVR",
+        "details":"Deep learning based human and vehicle targets classification of Motion Detection 2.0\nH.265 Pro+/H.265 Pro/H.265 video compression/nHDTVI/AHD/CVI/CVBS/IP video input\nAudio via coaxial cable\nUp to 5-ch IP camera inputs (up to 6 MP)\nEncoding ability up to 3K/5M Lite @ 12 fps"
+    },
+    {
+        "id":7,
+        "name":"IDS-7104HQHI-M1/S",
+        "img":"",
+        "heading":"4-ch 5MP Mini 1U H.265 AcuSense DVR",
+        "details":"Deep learning based human and vehicle targets classification of Motion Detection 2.0\nDeep learning-based perimeter protection\nH.265 Pro+/H.265 Pro/H.265 video compression\nHDTVI/AHD/CVI/CVBS/IP video inputs\nAudio via coaxial cable\nUp to 6-ch IP camera inputs (up to 8 MP)\nUp to 8MP@8 fps encoding capablity"
+    }
+]
