@@ -83,7 +83,55 @@
             }
         }
     });
+    if($('#product-container')){
+        console.log('hello world')
+        $.ajax({
+            url: './js/products.json',
+            dataType: 'json',
+            success: function(products) {
+                // Loop through each product and generate HTML
+                console.log()
+                $.each(products, function (index, product) {
 
-    
+                    if(index <7  && location.pathname == '/index.html' ){
+                        var productHTML = `
+                            <div class="col-md-6 col-lg-3 wow fadeInUp service-main" data-wow-delay="0.1s">
+                                <div class="service-item">
+                                    <div class="overflow-hidden" style="display: flex;justify-content: center;">
+                                        <img class="img-fluid" src="./img/products/${product.img}.jpeg" alt="${product.name}">
+                                    </div>
+                                    <div class="p-4 text-center">
+                                        <h4 class="mb-3">${product.name}</h4>
+                                        <p>${product.heading}</p>
+                                        <a class="fw-medium" href="./explore.html?id=${product.id}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        $('#product-container').append(productHTML)
+                    }
+                });
+                if(location.pathname == '/service.html'){
+                    $.each(products, function (index, product) {
+                            var productHTML = `
+                                <div class="col-md-6 col-lg-3 wow fadeInUp service-main" data-wow-delay="0.1s">
+                                    <div class="service-item">
+                                        <div class="overflow-hidden" style="display: flex;justify-content: center;">
+                                            <img class="img-fluid" src="./img/products/${product.img}.jpeg" alt="${product.name}">
+                                        </div>
+                                        <div class="p-4 text-center">
+                                            <h4 class="mb-3">${product.name}</h4>
+                                            <p>${product.heading}</p>
+                                            <a class="fw-medium" href="./explore.html?id=${product.id}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            $('#product-container').append(productHTML)
+                    });
+                }
+            }
+        });
+    }
 })(jQuery);
 
