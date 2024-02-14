@@ -4,6 +4,24 @@
     --light: #F5F5F5;
     --dark: #353535;
 }
+@media (max-width: 768px) {
+    #responsible-image {
+        height: 68%;
+    }
+}
+#responsible-image {
+    width: 200px;
+    height: 200px;
+
+}
+@media (max-width: 768px) {
+    #responsible-image {
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 30px;
+    }
+}
 
 .fw-medium {
     font-weight: 500 !important;
@@ -247,7 +265,7 @@ h1,h2,h3,h4,h5{
 }
 
 .page-header {
-    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/carousel-1.png) center center no-repeat;
+    background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/feature.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -431,7 +449,7 @@ h1,h2,h3,h4,h5{
     overflow: hidden;
 }
 .position-relative.h-100 img:hover{
-  /* transform: scale(1.2); */
+  transform: scale(1.2);
 }
 .navbar-light .navbar-toggler{
     border-color: transparent !important;
