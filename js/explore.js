@@ -1,26 +1,31 @@
-function getUrlParameter(name) {
-    name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    var results = regex.exec(location.search);
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-}
-
-window.addEventListener('scroll', function () {
-    if (window.scrollY >= 100) {
-        document.getElementById('explore-nav').style.top = '74px';
+(function ($) {
+    function getUrlParameter(name) {
+        name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     }
-});
-
-var id = getUrlParameter('id');
-let product = products.find(i => i.id == id);
-if (product) {
-    document.getElementById('explore-img').src = `./img/products/${product.img}.jpeg`;
-    document.getElementById('explore-heading').textContent = product.heading;
-    document.getElementById('heading-top').textContent = '< ' + product.name;
-
-    product.details.split('\n').forEach(function (detail) {
-        var li = document.createElement('li');
-        li.textContent = detail;
-        document.getElementById('explore-content').appendChild(li);
+    $(window).scroll(function() {
+        // Check if user has scrolled down 10px
+            if ($(this).scrollTop() >= 100) {
+                $('#explore-nav').css('top', '74px');
+            }
+        })
+    $.ajax({
+        url: './js/products.json',
+        dataType: 'json',
+        success: function(products) {
+            var id = getUrlParameter('id');
+            let product = products.find(i => i.id == id)
+            if(product) $('#explore-img').attr('src', `./img/products/${product.img}.jpeg`);
+            $('#explore-heading').text(product.heading)
+            $('#heading-top').text('< '+product.name)
+            console.log(product.details.split('\n'))
+            $.each(product.details.split('\n'), function (index, test) {
+                var productHTML = `<li class='pb-2'>${test}</li>`;
+                $('#explore-content').append(productHTML)
+            });
+        }
     });
-}
+})(jQuery);
+
